@@ -30,13 +30,13 @@
         "ms-python.python", // 파이썬
         "ms-python.vscode-pylance", // 파이썬 자동완성 및 힌트
         "ms-python.debugpy", // 파이썬 디버거
-        "ms-vsliveshare.vsliveshare", // 라이브 쉐어
+        "ms-vsliveshare.vsliveshare" // 라이브 쉐어
 			]
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
-	// "forwardPorts": [5000, 5432],
+	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip install --user -r requirements.txt",

@@ -1,4 +1,11 @@
-import http.server, ssl
+from fastapi import FastAPI
 
-httpd = http.server.HTTPServer(('localhost', 8080), http.server.SimpleHTTPRequestHandler)
-httpd.serve_forever()
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8080)
