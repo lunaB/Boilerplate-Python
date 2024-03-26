@@ -1,2 +1,3 @@
 # Boilerplate-Python
-Boilerplate Python
+Python DevContainer Boilerplate  
+Python + DevContainer + Docker-Compose
